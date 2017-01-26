@@ -1,0 +1,60 @@
+{
+  "HELLO": "hello {{value}}",
+  "description":"Description",
+  "login":"Login",
+  "signup":"Sign up",
+  "login.title":"Login to Product Data Management App",
+
+  "smeType.menu":"SME Type",
+  "smeType.title":"SME Type",
+
+  "bcaType.menu":"BCA Type",
+  "bcaType.title":"Busines Current Account Type",
+
+  "pcaType.menu":"PCA Type ",
+  "pcaType.title":"Peronal Current Account Type ",
+
+  "signup.title":"PDM App - Sign up Form",
+   "close":"Close",
+
+  "showHide":"Show/Hide",
+
+
+  "firstname":"Firstname",
+  "lastname":"Lastname",
+  "password":"Password",
+  "password.verify":"Re-enter your password",
+
+  "email":"Email",
+  "username":"Username",
+
+  "tel":"Telephone",
+  "address":"Address",
+  "postcode":"Post Code",
+  "city":"City",
+
+  "firstname.required":"Firstname is required",
+  "lastname.required":"Lastname is required",
+  "email.required":"Email is required",
+  "tel.required":"Telephone is required",
+  "password.required":"Pasword is required",
+  "password.verify.required":"Re-enter your email is required",
+  "AUTH.INVALID_CREDENTIALS" : "Username or password is incorrect",
+
+  "address.required":"Address is required",
+  "postcode.required":"Post Code is required",
+  "city.required":"City is required",
+
+  "product.organisation":"Organisation",
+
+  "button.save":"Save",
+  "button.draft":"Save as Draft",
+  "button.cancel":"Cancel",
+  "link.create":"Create New",
+
+  "product.create.title":"New Personal Current Account"
+
+
+
+
+}

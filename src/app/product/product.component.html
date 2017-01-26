@@ -1,0 +1,39 @@
+<div class="container page-title">{{titleHeader}}</div>
+<div class="container page-container">
+
+  <div class="workflow-actions">
+    <button id="prod-cancel" [routerLink]="['/home']" >Cancel</button>
+    <button id="prod-save" [disabled]= "currentProduct.status === 'APPROVED'" (click)="saveProduct()">Save As Draft</button>
+    <button id="prod-delete" *ngIf="edit" (click)="deleteProduct()">Delete</button>
+    <button id="prod-approve" *ngIf="edit" [disabled]="!isModelValid || currentProduct.status === 'APPROVED'" (click)="approveProduct()">Approve</button>
+  </div>
+
+  <schema-form #schemaForm
+               class="col-md-12 schema-form"
+               [schema]="schema"
+               (onChange)="reflectModelChange($event.value)">
+  </schema-form>
+  <!--<div class="col-md-12 panel panel-default height-content">-->
+    <!--<div class="panel-heading" style="margin-top:10px">-->
+      <!--<span class="small-font"><b>{{titleHeader}}</b>-->
+
+        <!--&lt;!&ndash;<a style="float:right;color:#5e6687;cursor:pointer" class= "small-font href-bold" (click)="outmodelRef.showModal()" >Show/Debug DataModel</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<outmodel  #outmodelRef [model]="model"></outmodel>&ndash;&gt;-->
+
+      <!--</span>-->
+    <!--</div>-->
+    <!--<div class="panel-body" >-->
+      <!--<schema-form #schemaForm style="overflow-y:auto;" class="col-md-12" [schema]="schema" (onChange)="reflectModelChange($event.value)"></schema-form>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
+
+<modal  #modalRef id="cancelConfirmation"
+       [title]="feedback.title"
+       [message]="feedback.message"
+       [cancel-label]="'Close'"
+       [positive-label]="'OK'"
+       [singleButton]="true"
+       (loaded)="cancelConfirmationModalLoaded($event)"
+       (closed)="onCancelConfirmation($event)">
+</modal>

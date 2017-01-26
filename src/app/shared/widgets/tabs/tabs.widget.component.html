@@ -1,0 +1,27 @@
+
+<tab-collection #tabsetRef class="small-font" >
+  <tab-element attr.id="tab-{{i+1}}" *ngFor="let fieldset of schema.fieldsets;let i=index" [title]="fieldset.title">
+
+    <form-element  #formElementRef *ngFor="let fieldId of fieldset.fields"
+                   [formProperty]="formProperty.getProperty(fieldId)"> </form-element>
+
+  </tab-element>
+</tab-collection>
+
+
+
+<!--[heading]="fieldset.title"  [ngClass]="setValidity(fieldset)===true:'ng-valid', setValidity(fieldset)===false:'ng-invalid'}" >-->
+
+<!--<tab-collection>-->
+  <!--<tab-element *ngFor="let fieldset of schema.fieldsets"  [title]="fieldset.title">-->
+    <!--<form-element *ngFor="let fieldId of fieldset.fields" [formProperty]="formProperty.getProperty(fieldId)" >-->
+      <!--</form-element>-->
+  <!--</tab-element>-->
+<!--</tab-collection>-->
+<!--//////////////////////////////////////////////////////-->
+  <!--[active]="tabz.active"-->
+  <!--(select)="tabz.active = true"-->
+  <!--(deselect)="tabz.active = false"-->
+  <!--[disabled]="tabz.disabled"-->
+  <!--[removable]="tabz.removable"-->
+  <!--(removed)="removeTabHandler(tabz)"-->

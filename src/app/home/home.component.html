@@ -1,0 +1,66 @@
+<div class="container page-title">Products</div>
+<div class="container">
+
+    <div class="col-sm-8 products-accordion">
+      <menu *ngFor="let menuItem of menuList"
+              [id]="menuItem.id"
+              [title]="menuItem.title"
+              [productType]="menuItem.productType"
+              [createRoute]="menuItem.createRoute"
+              [viewRoute]="menuItem.viewRoute"
+              [isDisabled]="menuItem.isDisabled"
+              [isVisible]="menuItem.isVisible"
+              [isOpen]="menuItem.isOpen"
+              [productList]="menuItem.productList"
+              [oneMenuOpenAtATime]="oneMenuOpenAtATime"
+              (opened)="setSelectedMenuId($event)"
+              class="products-accordion-item default-reverse-color"
+              >
+      </menu>
+    </div>
+
+    <!-- filtering -->
+    <div class="col-sm-4 pointer" style="display: none">
+        <accordion class="accordion-group-header">
+            <accordion-group heading="Global Filter" [isOpen]="true">
+                <form style="border-left:0px;color:black;font-size:11px">
+                    <div class="form-group">
+                        <label for="search">Search product</label>
+                        <input type="text" class="form-control" id="search" placeholder="Enter product name">
+                    </div>
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox">Show all</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox" checked="checked"> Approved</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox">Pending approval</label>-->
+                    <!--</div>-->
+
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox"> Rejected</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox"> Expiring soon</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox"> Schedulted</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox"> Suspended</label>-->
+                    <!--</div>-->
+
+                </form>
+
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
+
+
+
+
+
+
+

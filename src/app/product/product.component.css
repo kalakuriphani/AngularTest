@@ -1,0 +1,29 @@
+:host {
+}
+
+:host .page-container {
+  background-color: #ececec;
+  padding: 0;
+}
+
+:host /deep/ .workflow-actions {
+  padding: 15px;
+  text-align: right;
+}
+
+:host /deep/ .workflow-actions button {
+  background: transparent;
+  border: solid 1px #3e505d;
+  color: #3e505d;
+  font-size: 0.86em;
+  padding: 5px 20px 4px 20px;
+}
+
+:host /deep/ .workflow-actions button:hover {
+  color: #ffffff;
+  background-color: #3e505d;
+}
+
+:host /deep/ .schema-form {
+  padding: 0;
+}

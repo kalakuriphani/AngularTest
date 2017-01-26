@@ -1,0 +1,38 @@
+<br>
+<br/>
+
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8" style="border:1px solid white">
+  <br/>
+  <legend>
+    <h4 style="color:#3A3A3A">Login to Product Data Management App</h4>
+  </legend>
+<br>
+  <div class="panel-body">
+      <div class="col-sm-6 col-sm-offset-3">
+        <form style="border-left:0px;font-size:11px;color:black" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate enctype="application/x-www-form-urlencoded">
+          <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+            <label for="username">Username</label>
+            <input id="username" type="text" class=" input-sm form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+            <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+          </div>
+          <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <label for="password">Password</label>
+            <input id="password" type="password" class="inupt-sm form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Pasword is required</div>
+          </div>
+          <div class="form-group">
+            <button id="login-ok" class="btn btn-primary">&nbsp; &nbsp; OK &nbsp;&nbsp;</button>
+            <!--<img *ngIf="loading" src="/assets/img/spinner.gif"/>-->
+            <button id="login-cancel" class="btn btn-primary" (click)="cancel()">Cancel</button>
+          </div>
+
+          </form>
+      </div>
+  </div>
+  <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+
+</div>
+  <div class="col-sm-2"></div>
+</div>

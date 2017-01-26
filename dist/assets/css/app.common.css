@@ -1,0 +1,32 @@
+.default-color {
+ color: #000000;
+}
+
+.default-reverse-color {
+ color: #ffffff;
+}
+
+.disabled-color {
+  color: #cecece;
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+.ng-invalid {
+  /*color: #000000;*/
+  border-left: 5px solid #aa2222;
+}
+
+.ng-valid {
+  /*color: #225522;*/
+  border-left: 5px solid #227722;
+}
+
+.page-title {
+  font-size: 2.0em;
+  font-weight: bold;
+  color: #000000;
+  padding: 20px 20px 10px 90px !important;
+}

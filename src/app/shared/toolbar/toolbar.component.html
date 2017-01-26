@@ -1,0 +1,28 @@
+<div class="top">
+  <div *ngIf="authService.isAuthenticated" style="margin-top:2px;font-size:9px;float:left;color:white">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Logged as:&nbsp;<b>{{authService.loggedUser.username}}</b></div>
+
+  <ul class="menu-items default-reverse-color">
+    <li *ngIf="authService.isAuthenticated"><a class="default-reverse-color" href="#" (click)="authService.logout()">Log out</a></li>
+    &nbsp;&nbsp;&nbsp;
+    <li style="display:none">
+      <select  #langSelect (change)="switchLanguage(langSelect.value)">
+        <option value="en">English</option>
+        <option value="fr">Francais</option>
+      </select>
+    </li>
+  </ul>
+</div>
+<div class="bottom">
+  <div class="container">
+    <img class="logo" src="/assets/img/HSBC-logo.png">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="title default-color">Product Data Management</span>
+    <ul class="menu-items" *ngIf="authService.isAuthenticated">
+      <li *ngIf="authService.isAuthenticated"><a class="default-color" [routerLink]="['/home']">Products</a></li>
+      <li *ngIf="authService.isAuthenticated"><a class="disabled-color" disabled="disabled">Audit Trails</a></li>
+      <!--<li *ngIf="authService.isAuthenticated"><a class="disabled-color" disabled="disabled">User Management</a></li>-->
+      <!--<li *ngIf="authService.isAuthenticated"><a class="default-color" href="#" (click)="authService.logout()">Logout</a></li>-->
+    </ul>
+  </div>
+</div>

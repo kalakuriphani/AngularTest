@@ -1,0 +1,130 @@
+:host {
+  padding: 0;
+}
+
+:host .panel-heading {
+  margin: 0;
+  cursor: pointer;
+}
+
+:host .panel-heading .product-type {
+  font-size: 1.14em;
+  padding: 0;
+  margin-left: 75px;
+  display: inline-block;
+}
+
+:host .panel-heading .create-product-button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+:host .panel-heading .create-product-button a {
+  color: white;
+  font-size: 0.86em;
+}
+
+:host .panel-heading .toggle-icon {
+  float: right;
+  margin-right: 10px;
+}
+
+:host .panel-content {
+  margin: 0;
+}
+
+:host .panel-content .product-item {
+  background-color: #ececec;
+  border-top: solid 1px #ffffff;
+  margin: 0;
+  padding: 10px 0 10px 75px;
+}
+
+:host .panel-content .product-item .product-name {
+  font-size: 1em;
+  color: #000000;
+  font-weight: bold;
+}
+
+:host .panel-content .product-item .product-name .glyphicon {
+  color: #db0011;
+  font-size: 0.78em;
+}
+
+:host .panel-content .product-item .product-status {
+  text-align: right;
+  padding: 5px 15px 5px 5px;
+  font-size: 0.86em;
+}
+
+:host .panel-content .product-item .meta-fields {
+  font-size: 0.78em;
+  margin-top: 5px;
+}
+
+:host /deep/ .items-pager {
+  text-align: center;
+  padding: 10px 25px 25px;
+  background-color: #ffffff;
+}
+
+:host /deep/ .items-pager pagination {
+  border: none;
+}
+
+:host /deep/ .items-pager ul.pagination {
+  margin: 0;
+  padding: 0;
+}
+
+:host /deep/ .items-pager ul.pagination > li > a {
+  color: #3e505d;
+  border: none;
+}
+
+:host /deep/ .items-pager ul.pagination > .active > a {
+  background-color: #3e505d;
+  border-color: #3e505d;
+  color: #ffffff;
+}
+
+:host /deep/ .items-pager ul.pagination > li:first-child > a,
+:host /deep/ .items-pager ul.pagination > li:last-child > a{
+  border-radius: 0;
+}
+
+:host /deep/ .items-pager li {
+
+}
+
+:host /deep/ .no-products-found {
+  background-color: #ececec;
+  padding: 20px 20px 20px 90px;
+  font-size: 1em;
+  color: #626469;
+}
+
+input {
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 8px;
+}
+
+.table-font{
+  font-size:12px;
+  color:maroon;
+}
+
+.full button span {
+  background-color: limegreen;
+  border-radius: 32px;
+  color: black;
+}
+.partially button span {
+  background-color: orange;
+  border-radius: 32px;
+  color: black;
+}

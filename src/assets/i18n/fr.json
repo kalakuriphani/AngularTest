@@ -1,0 +1,56 @@
+{
+  "HELLO": "Bonjour {{value}}",
+
+  "description":"Description",
+  "products":"Produits",
+  "cancel":"Annuler",
+  "edit":"Modifier",
+  "confirm":"Confirmer",
+  "remove":"Supprimer",
+  "pcaType.menu":"PCA Type(fr) ",
+  "pcaType.title":"Peronal Current Account Type(fr) ",
+  "smeType.menu":"SME Type(fr)",
+  "smeType.title":"SME Type(fr)",
+  "bcaType.menu":"BCA Type(fr)",
+  "bcaType.title":"Busines Current Account Type(fr)",
+  "login":"Login",
+  "signup":"S'nscrire",
+  "login.title":"S'identifier Product Data Management App ",
+  "signup.title":"PDM App - Formulaire d'inscription",
+  "close":"Fermer",
+  "showHide":"Afficher/Cacher",
+
+  "firstname":"Firstname",
+  "lastname":"Lastname",
+  "password":"Mot de passe",
+  "password.verify":"re-inserer for mot de pase",
+
+  "email":"Email",
+  "username":"Utiliateur",
+  "tel":"Telephone",
+  "address":"Adresse",
+  "postcode":"Code Postal",
+  "city":"Ville",
+
+  "firstname.required":"Firstname est obligatoire",
+  "lastname.required":"Lastname est obligatoire",
+  "email.required":"Email est obligatoire",
+  "tel.required":"Telephone est obligatoire",
+  "password.required":"Mot de passe est obligatoire",
+  "password.verify.required":"Verifier votre mot de passe",
+  "address.required":"Address est obligatoire",
+  "postcode.obligatoire":"Post Code est obligatoire",
+  "city.obligatoire":"City est obligatoire",
+  "AUTH.INVALID_CREDENTIALS":"Username ou password n'est pas correct",
+
+  "product.organisation":"Organisation en francais",
+
+
+  "button.save":"Sauvgarder",
+  "button.draft":"Sauvrager comme Brouillon",
+  "button.cancel":"Annuler",
+  "link.create":"Ajouter nouveau",
+
+  "product.create.title":"Nouveau Compte personal"
+
+}

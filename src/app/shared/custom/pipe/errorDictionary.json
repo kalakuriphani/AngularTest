@@ -1,0 +1,512 @@
+[
+	{
+		"fieldName": "ParentGroupID",
+		"friendlyFieldName": "Parent group ID",
+		"friendlyError": "should be a BIC"
+	},
+	{
+		"fieldName": "CardWithdrawalLimit",
+		"friendlyFieldName": "Card withdrawal limit",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MonthlyMaximumCharge",
+		"friendlyFieldName": "Monthly maximum charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "Currency",
+		"friendlyFieldName": "Currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "StartPromotionOrFutureTerms",
+		"friendlyFieldName": "Start promotion or future terms",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "StopPromotionOrFutureTerms",
+		"friendlyFieldName": "Stop promotion or future terms",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "LengthPromotionalInDays",
+		"friendlyFieldName": "Length of promotion in days",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "DateOfChange",
+		"friendlyFieldName": "Date of change",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "ExchangeRateAdjustment",
+		"friendlyFieldName": "Exchange rate adjustment",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "MinimumAge",
+		"friendlyFieldName": "Minimum age",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "MaximumAge",
+		"friendlyFieldName": "Maximum age",
+		"friendlyError": "should be a positive whole number (or blank)"
+	},
+	{
+		"fieldName": "MaximumAgeToOpen",
+		"friendlyFieldName": "Maximum age to open",
+		"friendlyError": "should be a positive whole number (or blank)"
+	},
+	{
+		"fieldName": "MinimumIncomeTurnoverAmount",
+		"friendlyFieldName": "Minimum income or turnover amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinimumIncomeTurnoverCurrency",
+		"friendlyFieldName": "Minimum income or turnover currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "MinIncomeTurnoverPaidIntoAccount",
+		"friendlyFieldName": "Minimum income or turnover paid into account",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "AnnualBusinessTurnover",
+		"friendlyFieldName": "Annual business turnover",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "AnnualBusinessTurnoverCurrency",
+		"friendlyFieldName": "Annual business turnover currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "OpeningDepositMinimum",
+		"friendlyFieldName": "Opening deposit minimum",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "OpeningDepositMinimumCurrency",
+		"friendlyFieldName": "Opening deposit minimum currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "MinimumOperatingBalance",
+		"friendlyFieldName": "Minimum operating balance",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinimumOperatingBalanceCurrency",
+		"friendlyFieldName": "Minimum operating balance currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "OpeningDepositMaximumAmount",
+		"friendlyFieldName": "Opening deposit maximum amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "OpeningDepositMaximumCurrency",
+		"friendlyFieldName": "Opening deposit maximum currency",
+		"friendlyError": "should be a 3 letter currency code - e.g. GBP"
+	},
+	{
+		"fieldName": "StartDate",
+		"friendlyFieldName": "Start date",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "EndDate",
+		"friendlyFieldName": "End date",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "FixedInterestLength",
+		"friendlyFieldName": "Fixed interest length",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "TierValueMinimum",
+		"friendlyFieldName": "Tier value minimum",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "DailyChargeForMinimum",
+		"friendlyFieldName": "Daily charge for minimum",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "DailyChargeForMaximum",
+		"friendlyFieldName": "Daily charge for maximum",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "Rate",
+		"friendlyFieldName": "Rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "APRAERRate",
+		"friendlyFieldName": "APR/AER rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "ArrangedOverdraftInterestTier",
+		"friendlyFieldName": "Arranged overdraft interest tier",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "UnarrangedOverdraftInterestTier",
+		"friendlyFieldName": "Unarranged overdraft interest tier",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "TierValueMaximum",
+		"friendlyFieldName": "Tier value maximum",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "InterestRateEARpa",
+		"friendlyFieldName": "Interest rate EAR",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "RepresentativeRate",
+		"friendlyFieldName": "Representative rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "TotalOverdraftChargeAmount",
+		"friendlyFieldName": "Total overdraft charge amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinUnarrangedOverdraftAmount",
+		"friendlyFieldName": "Min unarranged overdraft amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "InterestRate",
+		"friendlyFieldName": "Interest rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "DailyCharge",
+		"friendlyFieldName": "Daily charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MonthlyCharge",
+		"friendlyFieldName": "Monthly charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "ItemCharge",
+		"friendlyFieldName": "Item charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "OtherCharge",
+		"friendlyFieldName": "Other charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "IndicativeRate",
+		"friendlyFieldName": "Indicative rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "BufferAmount",
+		"friendlyFieldName": "Buffer amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MaximumMonthlyOverdraftCharge",
+		"friendlyFieldName": "Maximum monthly overdraft charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MaximumDailyOverdraftCharge",
+		"friendlyFieldName": "Maximum daily overdraft charge",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "SetUpFeesAmount",
+		"friendlyFieldName": "Set up fees amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "SetUpFeesRate",
+		"friendlyFieldName": "Set up fees rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "ReviewFee",
+		"friendlyFieldName": "Review fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinimumFee",
+		"friendlyFieldName": "Minimum fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "AnnualRenewalFee",
+		"friendlyFieldName": "Annual renewal fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinimumSetupFee",
+		"friendlyFieldName": "Minimum setup fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "RenewalRate",
+		"friendlyFieldName": "Renewal rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "MinimumRenewalFee",
+		"friendlyFieldName": "Minimum renewal fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "FeeLowerTier",
+		"friendlyFieldName": "Fee lower tier",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "FeeHigherTier",
+		"friendlyFieldName": "Fee higher tier",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "FeeAmount",
+		"friendlyFieldName": "Fee amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "FeeRate",
+		"friendlyFieldName": "Fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "MinimumCriteria",
+		"friendlyFieldName": "Minimum criteria",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MaximumCriteria",
+		"friendlyFieldName": "Maximum criteria",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "Counter",
+		"friendlyFieldName": "Counter",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "PromotionStartDate",
+		"friendlyFieldName": "Promotion start date",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "PromotionEndDate",
+		"friendlyFieldName": "Promotion end date",
+		"friendlyError": "should be a valid date, YYYY-MM-DD"
+	},
+	{
+		"fieldName": "MinimumCreditLimit",
+		"friendlyFieldName": "Minimum credit limit",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "APRRate",
+		"friendlyFieldName": "APR rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "PurchaseRate",
+		"friendlyFieldName": "Purchase rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "BalanceTransferRate",
+		"friendlyFieldName": "Balance transfer rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "CashAdvanceRate",
+		"friendlyFieldName": "Cash advance rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "OverLimitFee",
+		"friendlyFieldName": "Over limit fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MaximumNumberOfCardsPermitted",
+		"friendlyFieldName": "Maximum number of cards permitted",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "DaysInterestFreeCreditIfPaymentFull",
+		"friendlyFieldName": "Days interest free credit if payment in full",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "IssuingEmergencyCardsFees",
+		"friendlyFieldName": "Issuing emergency cards fees",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "AnnualFeeAmount",
+		"friendlyFieldName": "Annual fee amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "ChequeFeePercent",
+		"friendlyFieldName": "Cheque fee percent",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "CashbackPercent",
+		"friendlyFieldName": "Cashback percent",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "FeesOnCheque",
+		"friendlyFieldName": "Fees on cheque",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MinimumRepaymentPercent",
+		"friendlyFieldName": "Minimum repayment percent",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "MinimumRepaymentAmount",
+		"friendlyFieldName": "Minimum repayment amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "PaymentDaysAfterStatement",
+		"friendlyFieldName": "Payment days after statement",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "MinimumLendingAmount",
+		"friendlyFieldName": "Minimum lending amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "PaymentSchemeExchangeRate",
+		"friendlyFieldName": "Payment scheme exchange rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "PaymentSchemeExchangeFee",
+		"friendlyFieldName": "Payment scheme exchange fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "PaymentSchemeExchangeFeeRate",
+		"friendlyFieldName": "Payment scheme exchange fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "NonSterlingTransactionFee",
+		"friendlyFieldName": "Non-Sterling transaction fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "NonSterlingTransactionFeeRate",
+		"friendlyFieldName": "Non-Sterling transaction fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "NonSterlingPurchaseFee",
+		"friendlyFieldName": "Non-Sterling purchase fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "NonSterlingPurchaseFeeRate",
+		"friendlyFieldName": "Non-Sterling purchase fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "NonSterlingCashFee",
+		"friendlyFieldName": "Non-Sterling cash fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "NonSterlingCashFeeRate",
+		"friendlyFieldName": "Non-Sterling cash fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "ForeignPurchaseFee",
+		"friendlyFieldName": "Foreign purchase fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "ForeignPurchaseFeeRate",
+		"friendlyFieldName": "Foreign purchase fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "ForeignCashFee",
+		"friendlyFieldName": "Foreign cash fee",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "ForeignCashFeeRate",
+		"friendlyFieldName": "Foreign cash fee rate",
+		"friendlyError": "should have up to 3 digits, a decimal point and up to 4 digits after"
+	},
+	{
+		"fieldName": "MinimumLoanTerm",
+		"friendlyFieldName": "Minimum loan term",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "MaximumLoanTerm",
+		"friendlyFieldName": "Maximum loan term",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "MinimumLoanAmount",
+		"friendlyFieldName": "Minimum loan amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "MaximumLoanAmount",
+		"friendlyFieldName": "Maximum loan amount",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "LoanSizeBandLower",
+		"friendlyFieldName": "Loan size band lower",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "LoanSizeBandUpper",
+		"friendlyFieldName": "Loan size band upper",
+		"friendlyError": "should have up to 10 digits, a decimal point and up to 2 digits after"
+	},
+	{
+		"fieldName": "LoanLengthIncrementLower",
+		"friendlyFieldName": "Loan length increment lower",
+		"friendlyError": "should be a whole number (or zero)"
+	},
+	{
+		"fieldName": "LoanLengthIncrementUpper",
+		"friendlyFieldName": "Loan length increment upper",
+		"friendlyError": "should be a whole number (or zero)"
+	}
+]

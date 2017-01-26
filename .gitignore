@@ -1,0 +1,7 @@
+.idea
+.editorconfig
+.DS_Store
+/.project
+npm-debug.log
+coverage
+.settings/

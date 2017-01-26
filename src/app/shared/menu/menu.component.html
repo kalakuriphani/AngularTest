@@ -1,0 +1,86 @@
+<div class="row panel-heading" (click)="toggle()">
+    <div class="product-type">{{title}}</div>
+    <div class="create-product-button">
+        <a id="{{productType}}" [routerLink]="createRoute">
+          Create new
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div class="toggle-icon">
+        <span [ngClass]="getActiveClass()"></span>
+    </div>
+</div>
+<div class="row panel-content default-color" [collapse]="!isOpen" style="display: none">
+  <div *ngIf="productList.length==0" class="no-products-found">No products found</div>
+  <div *ngFor="let oneProduct of productPager;let i=index;" class="row product-item">
+    <div class="col-sm-10" [ngSwitch]="oneProduct.productType">
+      <div *ngSwitchCase="'PCAHSBC'">
+        <a class="product-name" attr.id="PCA-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div class="meta-fields">Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+      <div *ngSwitchCase="'BCA'">
+        <a class="product-name" attr.id="BCA-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+
+        <div>Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+
+      <div *ngSwitchCase="'CCC'">
+        <a class="product-name" attr.id="CCC-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div>Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+
+      <div *ngSwitchCase="'SMEL'">
+        <a class="product-name" attr.id="SMEL-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div>Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+
+      <div *ngSwitchCase="'PCAMNS'">
+        <a class="product-name" attr.id="PCAMNS-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div>Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+
+      <div *ngSwitchCase="'PCAFD'">
+        <a class="product-name" attr.id="PCAFD-{{i+1}}" [routerLink]="[viewRoute, oneProduct.id]">
+
+          {{oneProduct.productDetails.ProductName}}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div>Last updated: {{getLastUpdatedDate(oneProduct)}} by {{getUpdatedBy(oneProduct)}}</div>
+      </div>
+
+    </div>
+    <div class="col-sm-2 product-status">
+      <span class="small-font">{{oneProduct.status}}</span>
+    </div>
+  </div>
+  <div class="items-pager">
+    <pagination id="pagination-{{productType}}" *ngIf="productList.length>itemsPerPage"
+                [itemsPerPage]="itemsPerPage"
+                [totalItems]="productList.length"
+                [(ngModel)]="currentPage"
+                [maxSize]="maxSize"
+                [rotate]="true"
+                [directionLinks]="false"
+                (numPages)="numPages = $event"
+                (pageChanged)="pageChanged($event)">
+    </pagination>
+  </div>
+</div>

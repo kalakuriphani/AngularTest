@@ -1,0 +1,127 @@
+.schema-form .form-control {
+  color: #000000;
+}
+
+.schema-form .invalid-tab {
+  border-top: 2px solid #aa2222 !important;
+}
+
+.schema-form .valid-tab {
+  border-top: 2px solid green !important;
+}
+
+.schema-form .nav-tabs {
+  border: 0;
+  background-color: #3e505d;
+  padding: 0 15px;
+}
+
+.schema-form .nav-tabs > li > a {
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 0.86em;
+  margin: 0;
+  padding: 0;
+}
+
+.schema-form .nav-tabs > li > a:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.schema-form .nav-tabs > li.active > a {
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.schema-form .nav-tabs > li {
+  border-left: solid 1px #ececec;
+  padding: 5px 10px;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+
+.schema-form .nav-tabs > li:first-child {
+}
+
+.schema-form .nav-tabs > li:last-child {
+  border-right: solid 1px #ececec;
+}
+
+.schema-form .nav-tabs > li.active {
+  background-color: #ececec;
+}
+
+.schema-form .tab-element {
+  padding: 40px 20px 20px 75px;
+}
+
+.schema-form .tab-element .widget .control-label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.schema-form .tab-element .widget .formHelp {
+  font-size: 0.78em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.schema-form .tab-element .widget input[type=text],
+.schema-form .tab-element .widget input[type=number],
+.schema-form .tab-element .widget input[type=date],
+.schema-form .tab-element .widget select {
+  width: 400px;
+}
+
+.schema-form .tab-element array-widget .widget input[type=text],
+.schema-form .tab-element array-widget .widget input[type=number],
+.schema-form .tab-element array-widget .widget input[type=date],
+.schema-form .tab-element array-widget .widget select {
+  width: 100%;
+}
+
+.schema-form .tab-element array-widget form-element {
+  width: 400px;
+  display: inline-block;
+}
+
+form-element > div > ng2sf-widget-chooser > array-widget > div > div > form-element > div > ng2sf-widget-chooser > form-object > fieldset > div > form-element {
+  width: 700px !important;
+}
+
+.schema-form .tab-element array-widget .form-group label.control-label {
+  display: inline;
+}
+
+form-element > div > ng2sf-widget-chooser > array-widget > div > div > button.array-remove-button {
+  display: block;
+}
+
+form-element > div > ng2sf-widget-chooser > array-widget > div > div > form-element > div > ng2sf-widget-chooser > form-object > fieldset > div > form-element > div > ng2sf-widget-chooser > array-widget > div > div > button.array-remove-button,
+form-element > div > ng2sf-widget-chooser > form-object > fieldset > div > form-element > div > ng2sf-widget-chooser > array-widget > div > div > button.array-remove-button {
+  display: inline-block;
+}
+
+
+.schema-form .tab-element .widget .array-add-button,
+.schema-form .tab-element .widget .array-remove-button {
+  border-radius: 0;
+  width: 100px;
+}
+
+.schema-form .tab-element .widget .array-add-button {
+  display: block;
+  margin-top: 5px;
+}
+
+.schema-form .tab-element > ol:first-of-type {
+  padding: 20px 0 0 20px;
+}
+
+.schema-form .tab-element > ol:first-of-type li {
+  padding: 5px;
+  color: #db0011 !important;
+}
